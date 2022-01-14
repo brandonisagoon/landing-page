@@ -5,24 +5,28 @@
     <title>Brandon Goon</title>
 </head>
 <body>
-  <h1>👋 Hello Stalkers!</h1>
-  <p style="font-family: monospace">Brandon Goon is a Goon named Brandon. Hence, @brandonisagoon.<br/>Here, let me make life easy for you...</p>
-  <a href="https://linkedin.com/in/brandongoon" target="_blank">Stalk Brandon Goon on Linked In.<br/></a>
-  <a href="https://twitter.com/brandonisagoon" target="_blank">Stalk Brandon Goon on Twitter.<br/></a>
-  <a href="https://instagram.com/brandonisagoon" target="_blank">Stalk Brandon Goon on Instagram.<br/></a>
-  <a href="https://tinder.com/@brandonisagoon" target="_blank">Stalk Brandon Goon on Tinder.<br/></a>
-  <p style="color: rgb(0, 0, 238); height: auto; margin: 0; text-decoration: underline">Stalk Brandon Goon on his Website.</p>
-  <p id="website" style="display: none; color: red; font-family: monospace" onclick="visitWebsite()">   Do you not know where you are?</p>
-  <a href="https://github.com/brandonisagoon" target="_blank">Stalk Brandon Goon on Github.<br/></a>
-  <a href="https://soraschools.com" target="_blank">Stalk Brandon Goon at his place of employment.<br/></a>
-  <a href="https://beanything.co" target="_blank">Stalk Brandon Goon at his failed startup.<br/></a>
-  <p style="font-family: monospace">If stalking Brandon Goon from afar doesn't satisfy you, reach out via <a href="mailto:iam@brandongoon.com?subject=%F0%9F%91%8B%20I'm%20a%20Stalker" target="_blank">iam[at]brandongoon[dot]com</a>.</p>
-  <p style="font-family: monospace">Made by a prick. Guess who?</p>
-  <script>
-      function visitWebsite() {
-          let msg = document.querySelector('#website');
-          msg.style.display = 'inline';
-      }
-  </script>
+    <!--You must have nothing better to do.-->
+    <h1>👋 Hello Stalkers!</h1>
+    <p style="font-family: monospace">Brandon Goon is a Goon named Brandon. Hence, @brandonisagoon.<br/>Here, let me make life easy for you...</p>
+    <a href="https://linkedin.com/in/brandongoon" target="_blank">Stalk Brandon Goon on Linked In.<br/></a>
+    <a href="https://twitter.com/brandonisagoon" target="_blank">Stalk Brandon Goon on Twitter.<br/></a>
+    <a href="https://instagram.com/brandonisagoon" target="_blank">Stalk Brandon Goon on Instagram.<br/></a>
+    <a href="https://tinder.com/@brandonisagoon" target="_blank">Stalk Brandon Goon on Tinder.<br/></a>
+    <p id="link" style="color: rgb(0, 0, 238); height: auto; margin: 0; text-decoration: underline">Stalk Brandon Goon on his Website.</p>
+    <p id="message" style="display: none; color: red; font-family: monospace">   Do you not know where you are?</p>
+    <a href="https://github.com/brandonisagoon" target="_blank">Stalk Brandon Goon on Github.<br/></a>
+    <a href="https://soraschools.com" target="_blank">Stalk Brandon Goon at his place of employment.<br/></a>
+    <a href="https://beanything.co" target="_blank">Stalk Brandon Goon at his failed startup.<br/></a>
+    <p style="font-family: monospace">If stalking Brandon Goon from afar doesn't satisfy you, reach out via <a href="mailto:iam@brandongoon.com?subject=%F0%9F%91%8B%20I'm%20a%20Stalker" target="_blank">iam[at]brandongoon[dot]com</a>.</p>
+    <p style="font-family: monospace">Made by a prick. Guess who?</p>
+    <script>
+        document.getElementById("link").addEventListener("click", showMessage);
+        
+        function showMessage() {
+            console.log("damn you're nosey");
+            let msg = document.getElementById('#message');
+            msg.style.display = 'block';
+        }
+    </script>
 </body>
 </html>
