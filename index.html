@@ -21,9 +21,10 @@
     <a href="https://music.apple.com/profile/brandonisagoon" target="_blank">Stalk Brandon Goon on Apple Music.<br/></a>
     <a href="https://open.spotify.com/user/1243256454" target="_blank">Stalk Brandon Goon on Spotify.<br/></a>
     <a href="https://tinder.com/@brandonisagoon" target="_blank">Stalk Brandon Goon on Tinder?<br/></a>
-    <a style="color: rgb(0, 0, 238); height: auto; margin: 0; text-decoration: underline; cursor: pointer">Brandon Goon does not have an OnlyFans. Get Lost Perverts.<br/></a>
-    <a id="link" style="color: rgb(0, 0, 238); height: auto; margin: 0; text-decoration: underline; cursor: pointer">Stalk Brandon Goon on his Website.<br/></a>
-    <p id="message" style="display: none; color: red">   Do you not know where you are?</p>
+    <a id="linkPerv" style="color: rgb(0, 0, 238); height: auto; margin: 0; text-decoration: underline; cursor: pointer">Brandon Goon does not have an OnlyFans.<br/></a>
+    <p id="perv" style="display: none; color: red">Get lost pervert.</p>
+    <a id="linkWeb" style="color: rgb(0, 0, 238); height: auto; margin: 0; text-decoration: underline; cursor: pointer">Stalk Brandon Goon on his Website.<br/></a>
+    <p id="web" style="display: none; color: red">Do you not know where you are?</p>
     <a href="https://github.com/brandonisagoon" target="_blank">Stalk Brandon Goon on Github.<br/></a>
     <a href="https://www.crunchbase.com/person/brandon-goon" target="_blank">Stalk Brandon Goon on Crunchbase.<br/></a>
     <a href="https://angel.co/u/brandonisagoon" target="_blank">Stalk Brandon Goon on AngelList.<br/></a>
@@ -34,12 +35,18 @@
     <p>Made by a prick. Guess who?</p>
     <p style="position: absolute; bottom: 0">v0.0.1 see <span id="changelog" style="color: rgb(0, 0, 238); height: auto; margin: 0; text-decoration: underline; cursor: pointer">changelog</span><p>
     <script>
-        document.getElementById("link").addEventListener("click", showMessage);
+        document.getElementById("linkPerv").addEventListener("click", showPerv);
+        document.getElementById("linkWeb").addEventListener("click", showWeb);
         document.getElementById("changelog").addEventListener("click", changeAlert);
         
-        function showMessage() {
+        function showPerv() {
+            console.log("no means no");
+            document.getElementById('perv').style.display = 'block';
+        }
+        
+        function showWeb() {
             console.log("stop touching me");
-            document.getElementById('message').style.display = 'block';
+            document.getElementById('web').style.display = 'block';
         }
         
         function changeAlert() {
