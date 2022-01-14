@@ -31,13 +31,19 @@
     <a href="https://beanything.co" target="_blank">Stalk Brandon Goon at his failed startup.<br/></a>
     <p>If stalking Brandon Goon from afar doesn't satisfy you, email <a href="mailto:iam@brandongoon.com?subject=%F0%9F%91%8B%20I'm%20a%20Stalker" target="_blank">iam@brandongoon.com</a> or <button type="button" onclick="alert('Nope. It\'d go straight to voicemail anyway.')">Call Brandon Goon</button></p>
     <p>Made by a prick. Guess who?</p>
-    <p style="position: absolute; bottom: 0">version 0.0.1 and the only version that will ever exist<p>
+    <p style="position: absolute; bottom: 0">v0.0.1 see <span id="changelog" style="color: rgb(0, 0, 238); height: auto; margin: 0; text-decoration: underline; cursor: pointer">changelog</span><p>
     <script>
         document.getElementById("link").addEventListener("click", showMessage);
+        document.getElementById("changelog").addEventListener("click", changeAlert);
         
         function showMessage() {
             console.log("stop touching me");
             document.getElementById('message').style.display = 'block';
+        }
+        
+        function changeAlert() {
+            console.log("You\'re probably a prick too.");
+            alert('It says 0.0.1');
         }
     </script>
     <!--By now, you must know I'm a product designer. This is not a product. Don't judge me.--->
