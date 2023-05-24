@@ -1,0 +1,68 @@
+/* Type */
+* {
+    font-family: colfax-web, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    color: rgba(0,0,0,1);
+    vertical-align: baseline;
+    background: transparent;
+}
+a {
+    font-family: colfax-web, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    color: rgba(0,0,0,1);
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* Components */
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Side Panel */
+.sidepanel {
+    position: fixed;
+    width: 20%;
+    height: 100vh;
+}
+.sidepanel .options {
+    margin-top: 160px;
+}
+.sidepanel .options .option {
+    display: block;
+    text-align: right;
+    margin: 4px 40px 8px 4px;
+    cursor: pointer;
+}
+.sidepanel .options .option a {
+    display: inline-block;
+    font-size: 14px;
+    color: rgba(83,83,83,1);
+    text-decoration: none;
+    line-height: 32px;
+    height: 32px;
+    padding: 0 16px;
+    border-radius: 16px;
+}
+.sidepanel .options .option a:hover {
+    background-color: rgb(240,240,240);
+}
+.sidepanel .options .option a.active {
+    color: rgba(0,0,0,1);
+    font-weight: 500;
+    background-color: rgb(240,240,240);
+}
+
+.page-index {
+    margin-left: 20%;
+    width: 80%;
+}
