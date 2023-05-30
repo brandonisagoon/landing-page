@@ -139,8 +139,6 @@ body {
             }
             .page-index .work .project:hover .meta-data {
                 max-width: 420px;
-                transition: max-width 0.2s;
-                transition-timing-function: ease-in-out;
             }
             .page-index .work .project .meta-data h2 {
                 padding-top: 48px;
