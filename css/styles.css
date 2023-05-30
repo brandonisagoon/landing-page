@@ -136,8 +136,6 @@ body {
             }
             .page-index .work .project .meta-data {
                 height: 100%;
-            }
-            .page-index .work .project:hover .meta-data {
                 max-width: 420px;
             }
             .page-index .work .project .meta-data h2 {
