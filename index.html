@@ -1,60 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brandon Goon</title>
-    <style>
-        p {
-            font-family: monospace
-        }
-    </style>
+    <link rel="stylesheet" href="https://use.typekit.net/jgh7ith.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
-<!--You must have nothing to do. I'd tell you to do something productive, but I'm not a hypocrite.-->
 <body>
-    <h1>👋 Hello Stalkers!</h1>
-    <p>Brandon Goon is a Goon named Brandon. Hence, @brandonisagoon.<br/>Here, let me make life easy for you...</p>
-    <a href="https://linkedin.com/in/brandongoon" target="_blank">Stalk Brandon Goon on LinkedIn.<br/></a>
-    <a href="https://twitter.com/brandonisagoon" target="_blank">Stalk Brandon Goon on Twitter.<br/></a>
-    <a href="https://instagram.com/brandonisagoon" target="_blank">Stalk Brandon Goon on Instagram.<br/></a>
-    <a href="https://www.youtube.com/c/BrandonGoon" target="_blank">Stalk Brandon Goon on YouTube.<br/></a>
-    <a href="https://soundcloud.com/brandonisagoon" target="_blank">Stalk Brandon Goon on SoundCloud.<br/></a>
-    <a href="https://music.apple.com/profile/brandonisagoon" target="_blank">Stalk Brandon Goon on Apple Music.<br/></a>
-    <a href="https://open.spotify.com/user/1243256454" target="_blank">Stalk Brandon Goon on Spotify.<br/></a>
-    <a href="https://tinder.com/@brandonisagoon" target="_blank">Stalk Brandon Goon on Tinder?<br/></a>
-    <a id="linkPerv" style="color: rgb(0, 0, 238); height: auto; margin: 0; text-decoration: underline; cursor: pointer">Brandon Goon does not have an OnlyFans.<br/></a>
-    <p id="perv" style="display: none; color: red">Get lost pervert.</p>
-    <a id="linkWeb" style="color: rgb(0, 0, 238); height: auto; margin: 0; text-decoration: underline; cursor: pointer">Stalk Brandon Goon on his Website.<br/></a>
-    <p id="web" style="display: none; color: red">Do you not know where you are?</p>
-    <a href="https://github.com/brandonisagoon" target="_blank">Stalk Brandon Goon on Github.<br/></a>
-    <a href="https://www.crunchbase.com/person/brandon-goon" target="_blank">Stalk Brandon Goon on Crunchbase.<br/></a>
-    <a href="https://angel.co/u/brandonisagoon" target="_blank">Stalk Brandon Goon on AngelList.<br/></a>
-    <a href="https://soraschools.com" target="_blank">Stalk Brandon Goon at his place of employment.<br/></a>
-    <!--If you're a student at Sora, please go do your work. My job sorta depends on it.-->
-    <a href="https://beanything.co" target="_blank">Stalk Brandon Goon at his failed startup.<br/></a>
-    <p>If stalking Brandon Goon from afar doesn't satisfy you, email <a href="mailto:iam@brandongoon.com?subject=%F0%9F%91%8B%20I'm%20a%20Stalker" target="_blank">iam@brandongoon.com</a> or <button type="button" onclick="alert('Nope. It\'d go straight to voicemail anyway.')">Call Brandon Goon</button></p>
-    <p>Made by a prick. Guess who?</p>
-    <p style="position: absolute; bottom: 0">v0.0.1 see <span id="changelog" style="color: rgb(0, 0, 238); height: auto; margin: 0; text-decoration: underline; cursor: pointer">changelog</span><p>
-    <script>
-        document.getElementById("linkPerv").addEventListener("click", showPerv);
-        document.getElementById("linkWeb").addEventListener("click", showWeb);
-        document.getElementById("changelog").addEventListener("click", changeAlert);
-        
-        function showPerv() {
-            console.log("no means no");
-            document.getElementById('perv').style.display = 'block';
-        }
-        
-        function showWeb() {
-            console.log("stop touching me");
-            document.getElementById('web').style.display = 'block';
-        }
-        
-        function changeAlert() {
-            console.log("You\'re probably a prick too.");
-            alert('It says 0.0.1');
-        }
-    </script>
-    <!--By now, you must know I'm a product designer. This is not a product. Don't judge me.--->
+    <div class="navigation">
+        <div class="options">
+            <div class="option">
+                <a class="active" href="/">Home</a>
+            </div>
+            <div class="option">
+                <a href="/">Story</a>
+            </div>
+            <div class="option">
+                <a href="/">Links</a>
+            </div>
+            <div class="option">
+                <a href="/">Email</a>
+            </div>
+        </div>
+    </div>
+    <div class="page-index">
+        <div class="hero">
+            <h4>👋, I'm</h4>
+            <h1>Brandon Goon.</h1>
+            <h1 class="secondary">I’ve spent the past 7 years building ed-tech. Most recently, I was Head of Product at Prequel — and before that, I was the first Product Designer at Sora and the Founder of Be Anything.</h1>
+            <p>I also love to cook 👨‍🍳, travel 🌏, listen to jazz 🎺, and DJ 🎧.</p>
+        </div>
+        <div class="work">
+            <h3>Work</h3>
+            <div class="project">
+                <div class="meta-data">
+                    <h2>Prequel Competitions</h2>
+                    <p class="small">An app for teens to build projects with peers and take their goals more seriously</p>
+                </div>
+
+                <div class="thumbnail-container">
+                    <img src="./images/Prequel%20Competitions.png" alt="thumbnail">
+                </div>
+            </div>
+            <div class="project">
+                <div class="meta-data">
+                    <h2>Naboo</h2>
+                    <p class="small">Prequel's UI Framework</p>
+                </div>
+                <div class="thumbnail-container">
+                    <img src="./images/Prequel%20Design%20System.png" alt="thumbnail">
+                </div>
+            </div>
+            <div class="project">
+                <div class="meta-data">
+                    <h2>Prequel Classes</h2>
+                    <p class="small">A web app for purchasing individual classes</p>
+                </div>
+
+                <div class="thumbnail-container">
+                    <img src="images/Prequel%20Workshops.png" alt="thumbnail">
+                </div>
+            </div>
+            <div class="project">
+                <div class="meta-data">
+                    <h2>Sora Product Ops</h2>
+                    <p class="small">Rethinking Design at Sora Schools</p>
+                </div>
+
+                <div class="thumbnail-container">
+                    <img src="./images/Sora%20Design%20System.png" alt="thumbnail">
+                </div>
+            </div>
+            <div class="project">
+                <div class="meta-data">
+                    <h2>Sora Assignments</h2>
+                    <p class="small">A learning management system for a project-based school</p>
+                </div>
+
+                <div class="thumbnail-container">
+                    <img src="./images/Sora%20Assignments.png" alt="thumbnail">
+                </div>
+            </div>
+            <div class="project">
+                <div class="meta-data">
+                    <h2>Be Anything</h2>
+                    <p class="small">A web app that turns boring lessons into fun projects</p>
+                </div>
+
+                <div class="thumbnail-container">
+                    <img src="./images/Be%20Anything.png" alt="thumbnail">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
