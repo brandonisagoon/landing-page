@@ -162,6 +162,12 @@ body {
                 transition: opacity 0.2s;
                 transition-timing-function: ease-in-out;
             }
+            .page-index .work .project .thumbnail-container .wip-scrim {
+                width: 100%;
+                height: 100%;
+                background-color: black;
+                opacity: 0.25;
+            }
             .page-index .work .project .thumbnail-container img {
                 height: 100%;
                 aspect-ratio: 8/5;
