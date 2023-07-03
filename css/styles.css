@@ -173,7 +173,18 @@ body {
                 aspect-ratio: 8/5;
                 object-fit: cover;
             }
-
+        /* articles */
+        article {
+            margin-left: 20%;
+            width: 80%;
+            max-width: 886px;
+            padding: 42px;
+            box-sizing: border-box;
+        }
+        article p {
+            margin: 16px 0;
+            line-height: 1.5;
+        }
 /* Mobile */
 @media screen and (max-width: 480px) {
     /* Type */
@@ -257,4 +268,10 @@ body {
             width: 100%;
             aspect-ratio: 8/5;
         }
+    /* articles */
+    article {
+        width: 100%;
+        margin: 0 0 64px 0;
+        padding: 40px 16px;
+    }
 }
