@@ -31,27 +31,12 @@
             <h1 class="secondary">I design and build software that fuels people's creativity.</h1>
             <p>I also love to cook 👨‍🍳, travel 🌏, listen to jazz 🎺, and DJ 🎧.</p>
         </div>
-        <div class="work">
-            <h3>Work</h3>
-<!--            <a class="project">-->
-<!--                <div class="meta-data">-->
-<!--                    <h2>Micro-Split AC</h2>-->
-<!--                    <p class="small">An industrial design for a new category of air conditioner — Coming Soon!</p>-->
-<!--                </div>-->
-<!--                <div class="thumbnail-container">-->
-<!--                    <img src="./images/Micro-Split%20AC.png" alt="thumbnail">-->
-<!--                </div>-->
-<!--            </a>-->
-<!--            <a href="https://work.brandongoon.com/cursor-chat" class="project">-->
-<!--                <div class="meta-data">-->
-<!--                    <h2>Cursor Chat</h2>-->
-<!--                    <p class="small">Show code to your built-in pair programmer.</p>-->
-<!--                </div>-->
-
-<!--                <div class="thumbnail-container">-->
-<!--                    <img src="./images/Cursor%20Chat.png" alt="thumbnail">-->
-<!--                </div>-->
-<!--            </a>-->
+        <div id="viewSelector" class="segmented-control">
+            <div id="previous" class="option active" onclick="selectView('previous', this)">Previous Work</div>
+            <div id="demos" class="option" onclick="selectView('demos', this)">AI Demos</div>
+            <div id="hardware" class="option" onclick="selectView('hardware', this)">Hardware</div>
+        </div>
+        <div id="previousProjects" class="work">
             <a href="https://work.brandongoon.com/prequel-competitions" class="project">
                 <div class="meta-data">
                     <h2>Prequel Competitions</h2>
@@ -122,6 +107,63 @@
                 </div>
             </a>
         </div>
+        <div id="demosProjects" class="work hidden">
+            <a href="https://work.brandongoon.com/describe-to-select" class="project">
+                <div class="meta-data">
+                    <h2>CAD Smart Selection</h2>
+                    <p class="small">Describe to select complex geometry</p>
+                </div>
+
+                <div class="thumbnail-container">
+                    <img src="./images/Describe%20to%20Select.png" alt="thumbnail">
+                </div>
+            </a>
+            <a href="https://work.brandongoon.com/cursor-chat" class="project">
+                <div class="meta-data">
+                    <h2>Cursor Chat</h2>
+                    <p class="small">Show code to your built-in pair programmer.</p>
+                </div>
+
+                <div class="thumbnail-container">
+                    <img src="./images/Cursor%20Chat.png" alt="thumbnail">
+                </div>
+            </a>
+        </div>
+        <div id="hardwareProjects" class="work hidden">
+            <a class="project" >
+                <div class="meta-data">
+                    <h2>Shadow Air</h2>
+                    <p class="small">The hidden window air conditioner</p>
+                </div>
+                <div class="thumbnail-container">
+                    <img src="./images/Micro-Split%20AC.png" alt="thumbnail">
+                </div>
+            </a>
+        </div>
     </div>
 </body>
+<script>
+    function selectView(workView, selector) {
+        let segmentedControlOptions = Array.from(document.getElementById('viewSelector').children)
+        segmentedControlOptions.map((option) => option.classList.remove('active'))
+        selector.classList.add('active')
+
+        let work = Array.from(document.getElementsByClassName('work'))
+        work.map((view) => view.classList.add('hidden'))
+
+        let activeView = document.getElementById(workView+'Projects')
+        activeView.classList.remove('hidden')
+
+        sessionStorage.setItem('selectedView', workView)
+		}
+
+		window.onload = function loadView() {
+			let selectedView = sessionStorage.getItem('selectedView')
+
+      if (selectedView) {
+				let option = document.getElementById(selectedView)
+        selectView(selectedView, option)
+      }
+    }
+</script>
 </html>
