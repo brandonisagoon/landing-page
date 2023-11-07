@@ -135,7 +135,7 @@ body {
                 border-radius: 21px;
             }
                 .segmented-control .option {
-                    color: rgba(83,83,83,1);
+                    color: rgba(112, 112, 112, 0.85);
                     font-size: 14px;
                     text-align: center;
                     line-height: 40px;
@@ -146,9 +146,11 @@ body {
                     cursor: pointer;
                 }
                 .segmented-control .option:hover {
+                    color: rgba(83,83,83,1);
                     background-color: rgb(240,240,240);
                 }
                 .segmented-control .active {
+                    color: rgba(83,83,83,1);
                     border: rgba(83,83,83,1) solid 1px;
                     margin: 0;
                 }
